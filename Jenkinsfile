@@ -19,7 +19,7 @@ pipeline {
         }
         stage('Deploy') { 
             steps {
-                // Your deployment steps here (e.g., copy files to server)
+                sh 'npm start'
             }
         }
     }
